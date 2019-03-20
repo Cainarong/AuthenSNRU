@@ -128,9 +128,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YSK-br-e5k">
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="xPU-Go-b7b">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NBr-nY-BmU">
+                                <rect key="frame" x="66.5" y="118" width="281" height="30"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Pzx-yV-fKf"/>
+                                    <constraint firstAttribute="width" constant="281" id="jsf-tq-wGk"/>
+                                </constraints>
+                                <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nsq-QO-t3a">
+                                <rect key="frame" x="66.5" y="169" width="281" height="30"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="281" id="gV2-66-4Ph"/>
+                                    <constraint firstAttribute="height" constant="30" id="iq3-xR-AMz"/>
+                                </constraints>
+                                <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="waM-gX-eLZ">
+                                <rect key="frame" x="66.5" y="222" width="281" height="30"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="281" id="hyj-O4-EEL"/>
+                                    <constraint firstAttribute="height" constant="30" id="lNz-B3-Nip"/>
+                                </constraints>
+                                <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSK-br-e5k">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89813512563705444" green="0.87898050211677581" blue="0.1914848461551239" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.10196429307632017" green="0.13008514847889277" blue="0.89813512563705444" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <items>
@@ -140,11 +175,31 @@
                                                 <action selector="backButton:" destination="wgr-bL-7Bf" id="bgX-2v-ltj"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="CloudUpload" id="6T2-ef-pKa">
+                                            <connections>
+                                                <action selector="uplocadButton:" destination="wgr-bL-7Bf" id="ZMQ-f4-i0W"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nsq-QO-t3a" firstAttribute="centerX" secondItem="fa9-CT-aTm" secondAttribute="centerX" id="Gva-6X-KMW"/>
+                            <constraint firstItem="YSK-br-e5k" firstAttribute="top" secondItem="NlQ-p1-YSR" secondAttribute="top" id="JFd-8O-udV"/>
+                            <constraint firstItem="waM-gX-eLZ" firstAttribute="top" secondItem="nsq-QO-t3a" secondAttribute="bottom" constant="23" id="Mho-jj-7O4"/>
+                            <constraint firstItem="xPU-Go-b7b" firstAttribute="top" secondItem="NlQ-p1-YSR" secondAttribute="top" constant="44" id="TWq-pg-sSw"/>
+                            <constraint firstItem="nsq-QO-t3a" firstAttribute="top" secondItem="NBr-nY-BmU" secondAttribute="bottom" constant="21" id="Uio-qP-E86"/>
+                            <constraint firstItem="xPU-Go-b7b" firstAttribute="trailing" secondItem="NlQ-p1-YSR" secondAttribute="trailing" id="YqV-SJ-Zqo"/>
+                            <constraint firstItem="NBr-nY-BmU" firstAttribute="top" secondItem="YSK-br-e5k" secondAttribute="bottom" constant="30" id="aZ2-oQ-gUA"/>
+                            <constraint firstItem="xPU-Go-b7b" firstAttribute="leading" secondItem="NlQ-p1-YSR" secondAttribute="leading" id="eCz-rb-Xda"/>
+                            <constraint firstItem="xPU-Go-b7b" firstAttribute="bottom" secondItem="NlQ-p1-YSR" secondAttribute="bottom" id="fUE-WU-mSb"/>
+                            <constraint firstItem="waM-gX-eLZ" firstAttribute="centerX" secondItem="fa9-CT-aTm" secondAttribute="centerX" id="iyb-Kq-odF"/>
+                            <constraint firstItem="NBr-nY-BmU" firstAttribute="centerX" secondItem="fa9-CT-aTm" secondAttribute="centerX" id="tZ4-rL-bVW"/>
+                            <constraint firstItem="YSK-br-e5k" firstAttribute="leading" secondItem="NlQ-p1-YSR" secondAttribute="leading" id="vod-hq-APg"/>
+                            <constraint firstItem="YSK-br-e5k" firstAttribute="trailing" secondItem="NlQ-p1-YSR" secondAttribute="trailing" id="xQA-8f-hrL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="NlQ-p1-YSR"/>
                     </view>
                     <connections>
@@ -153,11 +208,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VXO-zb-FxB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="948" y="134"/>
+            <point key="canvasLocation" x="947.82608695652186" y="133.92857142857142"/>
         </scene>
     </scenes>
     <resources>
         <image name="ArrowBack" width="72" height="72"/>
+        <image name="CloudUpload" width="72" height="72"/>
         <image name="Logo" width="170.5" height="170.5"/>
         <image name="Wallpaper" width="256" height="341"/>
     </resources>

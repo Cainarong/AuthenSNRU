@@ -16,6 +16,14 @@ class RegisterViewController: UIViewController {
         // Do any additional setup after loading the view.
     }//Main Method
     
+    
+    
+    @IBAction func uplocadButton(_ sender: UIBarButtonItem) {
+        
+        
+        
+    }
+    
 
     
     @IBAction func backButton(_ sender: UIBarButtonItem) {
