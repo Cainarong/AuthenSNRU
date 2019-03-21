@@ -54,8 +54,20 @@ class RegisterViewController: UIViewController {
         print("user = \(user)")
         print("password = \(password)")
         
+        if (name.count == 0) || (user.count == 0) || (password.count == 0) {
+            myAlrt(titleString: "Have Space", messageString: "Please Fll All Blank")
+        } else{
+            
+        }
         
+        
+    }//Uploaod Button
+    
+    func myAlrt(titleString:String,messageString:String) -> Void {
+        
+        print("title = \(titleString),message = \(messageString)")
     }
+    
     
 
     
