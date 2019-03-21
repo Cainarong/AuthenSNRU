@@ -20,7 +20,7 @@ class RegisterViewController: UIViewController {
     
     @IBAction func uplocadButton(_ sender: UIBarButtonItem) {
         
-        
+        print("You Cilck Upload")
         
     }
     
